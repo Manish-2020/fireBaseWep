@@ -9,7 +9,6 @@ body {
   height: 100vh;
   margin: 0;
   font-family: system-ui;
-  perspective: 10000px;
 }
 
 * {
@@ -42,7 +41,11 @@ body {
       position: absolute;
       top: 0;
       right: 0;
-      transition: all ease 0.4s;
+      transition: all ease-in-out 0.4s;
+    }
+
+    .cc {
+      box-shadow: var(--shadow);
     }
 
     .circle4 {
@@ -53,8 +56,7 @@ body {
       position: absolute;
       top: 4px;
       right: 4px;
-      box-shadow: var(--shadow);
-      transition: all ease 0.8s;
+      transition: all ease-in-out 0.8s;
     }
 
     .circle3 {
@@ -65,8 +67,7 @@ body {
       position: absolute;
       top: 8px;
       right: 8px;
-      box-shadow: var(--shadow);
-      transition: all ease 1.2s;
+      transition: all ease-in-out 1.2s;
     }
 
     .circle2 {
@@ -77,8 +78,7 @@ body {
       position: absolute;
       top: 12px;
       right: 12px;
-      box-shadow: var(--shadow);
-      transition: all ease 1.6s;
+      transition: all ease-in-out 1.6s;
     }
 
     .circle1 {
@@ -89,7 +89,6 @@ body {
       position: absolute;
       top: 16px;
       right: 16px;
-      box-shadow: var(--shadow);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -97,7 +96,7 @@ body {
       font-weight: 900;
       color: #fff;
       letter-spacing: 0.1em;
-      transition: all ease 2s;
+      transition: all ease-in-out 2s;
 
       .txt {
         border-bottom: 4px solid #fff;
@@ -138,15 +137,15 @@ body {
       margin-right: 8px;
     }
     .icon:nth-child(1) {
-      transition: all ease 0.9s;
+      transition: all ease 0.3s;
     }
 
     .icon:nth-child(2) {
-      transition: all ease 0.6s;
+      transition: all ease-in 0.3s;
     }
 
     .icon:nth-child(3) {
-      transition: all ease 0.3s;
+      transition: all ease-out 0.3s;
     }
     .iconinner {
       font-size: 12px;
@@ -162,43 +161,39 @@ body {
 }
 
 .card:hover {
+  box-shadow: -4px 4px 6px #0000002f;
   cursor: pointer;
   transform: rotateX(20deg) rotateY(15deg);
   .cardinner {
-    box-shadow: -5px 5px 15px #0000002f;
+    box-shadow: -15px 15px 15px #00000025;
     transform: translate(15px, -15px);
-
-    .txt1 {
-      text-shadow: 2px 1px 2px #00000033;
-    }
 
     .icon {
       box-shadow: -15px 15px 15px #0000002f;
       transform: translate(15px, -15px);
     }
 
-    .circle5 {
+    .cc {
       box-shadow: -15px 15px 8px #00000018;
+    }
+
+    .circle5 {
       transform: translate(10px, -10px);
     }
 
     .circle4 {
-      box-shadow: -15px 15px 8px #00000018;
       transform: translate(15px, -15px);
     }
 
     .circle3 {
-      box-shadow: -15px 15px 8px #00000018;
       transform: translate(20px, -20px);
     }
 
     .circle2 {
-      box-shadow: -15px 15px 8px #00000018;
       transform: translate(25px, -25px);
     }
 
     .circle1 {
-      box-shadow: -15px 15px 8px #00000018;
       transform: translate(30px, -30px);
     }
   }
