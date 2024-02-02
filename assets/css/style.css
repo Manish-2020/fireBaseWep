@@ -1,0 +1,58 @@
+body {
+    background: url(../images/3416208_59272.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+       box-sizing: border-box;
+}
+
+form {
+    -webkit-backdrop-filter:  blur(2px);   
+    width: 400px;
+    background: #ec0ce16e;
+    box-shadow: 2px 4px 6px #0000002f;
+    border-radius: 9px;
+    backdrop-filter:  blur(2px);
+    padding: 20px;
+    text-align: center;
+   
+ 
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 18px;
+        padding: 8px 14px;
+        border-radius: 9px;
+        border: unset;
+        outline: unset;        
+    }
+
+    .mybtn {
+         display: flex;   
+         .cc {
+            margin: 0 2px;
+            text-transform: uppercase;
+            font-family: cursive;
+            font-weight: 900;
+            color: whitesmoke;
+            background: #000;
+            box-shadow: 2px 4px 6px #000;
+            cursor: pointer;
+            transition: all ease .3s;
+            border: 2px dashed #000;
+         }  
+         
+         .cc:hover {
+            color: wheat;
+            border: 2px solid #c9ff04;
+         }
+    }
+}
