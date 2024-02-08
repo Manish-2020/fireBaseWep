@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .box {
+            --w: 50px;
+            width: var(--w);
+            height: var(--w);
+            animation: coder 3s 1 both;
+            background: red;
+            /* transform: translate(100px, -200px); */
+        }
+
+        @keyframes coder {
+            from {
+                transform: translate(0px, 0px);
+            }
+
+            to {
+                transform: translate(100px, -200px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>

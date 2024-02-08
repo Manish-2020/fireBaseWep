@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 2D</title>
+    <link rel="stylesheet" href="./assets/css/card2.css">
+
+
+</head>
+
+
+<body class="flex">
+
+
+    <div class="card card3">
+        <div class="cardinner">
+            <div class="r1">
+                <div class="txt"></div>
+                <div class="txt"></div>
+            </div>
+            <div class="r2">
+                <div class="circle"></div>
+            </div>
+
+            <div class="r3">
+                <div class="mybtn">
+                    <div class="btn1  active cc">light</div>
+                    <div class="btn2 cc">dark</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelector('.btn1').addEventListener('click', () => {
+            document.querySelector('.card').classList = 'card'
+        })
+
+        document.querySelector('.btn2').addEventListener('click', () => {
+            document.querySelector('.card').classList = 'card card3'
+        })
+    </script>
+
+
+</body>
+
+</html>

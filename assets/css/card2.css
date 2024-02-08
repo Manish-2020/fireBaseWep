@@ -1,0 +1,160 @@
+body {
+    background: #e8e8e8;
+    height: 100vh;
+    margin: 0;
+    font-family: system-ui;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    --w: 300px;
+    width: var(--w);
+    height: var(--w);
+    background: #e8e8e8;
+    box-shadow: 2px 4px 6px #0000004d;
+    border-radius: 60px;
+    overflow: hidden;
+    padding: 20px;
+
+    transition: all ease 1s;
+
+    .cardinner {
+        width: 100%;
+        height: 100%;
+        /* background: red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .r1 {
+            width: 100%;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .txt {
+                width: 10px;
+                background: #686868;
+                height: 10px;
+            }
+        }
+
+        .r2 {
+            --w: 150px;
+            width: var(--w);
+            height: var(--w);
+            background: linear-gradient(45deg, #ff245f, #ff8c00);
+            border-radius: 50%;
+            position: relative;
+
+            .circle {
+                --w: 70px;
+                width: var(--w);
+                height: var(--w);
+                background: transparent;
+                border-radius: 50%;
+                position: absolute;
+                right: 0;
+                transform: translate(44px, -46px) scale(.2);
+
+                animation: coder2 1s 1 linear;
+            }
+        }
+
+        .r3 {
+            width: 100%;
+            padding: 0 20px;
+
+
+            .mybtn {
+                background: #d0d0d0;
+                display: flex;
+                justify-content: space-between;
+                font-size: 22px;
+                text-transform: capitalize;
+                font-weight: 800;
+                border-radius: 50px;
+                color: #686868;
+
+                .cc {
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+
+
+                .active {
+                    color: #000000;
+                    background: #ffffff;
+                    box-shadow: 0 0 6px 3px #00000015;
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+}
+
+.card.card3 {
+    transition: all ease 1s;
+    background: #26242e;
+
+    .cardinner {
+        .r2 {
+            background: linear-gradient(45deg, #8f97f8, #a3dafb);
+            position: relative;
+
+            .circle {
+                background: #26242e;
+                transform: translate(-13px,
+                        9px) scale(1);
+                animation: coder1 1s 1 linear;
+
+            }
+
+
+        }
+    }
+}
+
+@keyframes coder1 {
+    from {
+        background: #fff;
+        transform: translate(44px, -46px) scale(.2);
+    }
+
+    to {
+        transform: translate(-13px,
+                9px) scale(1);
+    }
+}
+
+@keyframes coder2 {
+    from {
+        background: #26242e;
+        ;
+        transform: translate(-13px,
+                9px) scale(1);
+    }
+
+    to {
+        background: #fff;
+        transform: translate(44px, -46px) scale(.2);
+    }
+
+
+}
