@@ -39,6 +39,7 @@ form {
   .mybtn {
     display: flex;
     margin-top: 20px;
+
     .cc {
       text-transform: uppercase;
       font-family: cursive;
@@ -50,12 +51,25 @@ form {
       transition: all ease 0.3s;
       border: 2px dashed #000;
     }
+
     .cc:hover {
       color: wheat;
       border: 2px solid #c9ff04;
     }
+
     .cc:nth-child(1) {
       margin-right: 10px;
     }
+  }
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
